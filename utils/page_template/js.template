@@ -1,0 +1,39 @@
+const Vue = require('vue/dist/vue');
+const VueI18n = require('vue-i18n/dist/vue-i18n');
+
+Vue.use(VueI18n);
+
+require('semantic-ui/dist/semantic.min.css');
+require('semantic-ui/dist/semantic.min.js');
+
+require('../../components/headerbar/headerbar.js');
+require('../../components/footerbar/footerbar.js');
+require('../../components/popups/alert/alert.js');
+
+require('./<%= page %>.sass');
+let template = require('./<%= page %>.html');
+
+const i18n = require('../../lib/i18n.js');
+// require default locale message.
+// const cn = require('../../../../languages/cn/home_page.js');
+// i18n.setLocaleMessage('cn', cn);
+
+let mixins = require('../../lib/mixins.js');
+
+let app = new Vue({
+    el: '#app',
+    template,
+    mixins: [mixins(Vue, 'home_page')],
+    data: {
+    },
+    i18n,
+
+    mounted() {
+        setTimeout(() => {
+            $('.loading').fadeOut();
+        }, 500);
+    },
+
+    methods: {
+    },
+});

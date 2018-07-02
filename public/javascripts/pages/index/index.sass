@@ -1,0 +1,126 @@
+@import '../../styles/base.sass'
+
+.index-page
+  .section
+    width: 100%
+    padding: 50px 0
+  .section-wrapper
+    max-width: 900px
+    margin: auto
+    text-align: center
+  .section-header
+    font-size: 1.5em
+    font-weight: bold
+
+  .s1
+    background: $c3
+    color: $white
+    .title
+      font-size: 3em
+      font-weight: bold
+      margin: 10px
+    .sub-title
+      font-size: 2em
+      font-weight: bold
+
+  .s2
+    .about
+      width: 80%
+      text-align: left
+      margin: 50px auto
+    .features
+      .feature
+        width: 200px
+        display: inline-block
+        text-align: center
+        img
+          width: 100px
+          height: 100px
+    .qrcodes
+      margin: 20px auto
+      .borrow
+        width: 200px
+        text-align: center
+        display: inline-block
+        margin: 20px
+        p
+          font-weight: bold
+          font-size: 1.5em
+        img
+          width: 200px
+
+  .s3
+    background: $c3
+    color: $white
+    .flow
+      display: inline-block
+      width: 40%
+      text-align: left
+      vertical-align: middle
+      .flow-steps
+        p
+          font-size: 0.8em
+          margin: 5px 0
+    .flow-graph
+      display: inline-block
+      width: 40%
+      vertical-align: middle
+      img
+        width: 500px
+
+  .s4
+    .roadmap
+      border-top: solid 5px $c3
+      margin: 100px auto 50px auto
+      .step
+        display: inline-block
+        vertical-align: top
+        position: relative
+        width: 16%
+        margin: 0
+        text-align: center
+        .ball
+          position: absolute
+          width: 15px
+          height: 15px
+          left: 50%
+          top: -13px
+          margin-left: -10px
+          border-radius: 100%
+          background: $c3
+          border: solid 3px $c3
+        .ball.unrealized
+          background: white
+          border: solid 3px $c3
+        .bar
+          position: absolute
+          width: 5px
+          height: 90px
+          left: 50%
+          top: 0
+          margin-left: -2px
+          background: $c3
+        .bar.long
+          height: 110px
+        .time
+          position: absolute
+          top: -40px
+          width: 100%
+          text-align: center
+        .work
+          padding-top: 100px
+          width: 70%
+          margin: auto
+        .work.long
+          padding-top: 120px
+
+  .s5
+    background: $c3
+    color: $white
+    a
+      color: $white !important
+    .links
+      a
+        text-decoration: none
+    .icon-copyright
+      text-align: center

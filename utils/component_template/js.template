@@ -1,0 +1,14 @@
+const Vue = require('vue/dist/vue');
+
+require('./<%= component %>.sass');
+let template = require('./<%= component %>.html');
+
+Vue.component('<%= component %>', {
+    template,
+    data() {
+        return {};
+    },
+
+    methods: {
+    }
+});
